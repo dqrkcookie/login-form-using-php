@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Helvetica Neue";
+}
+
+nav {
+  background-color: gray;
+  height: 4rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  padding: 8px;
+  margin: 16px;
+  list-style: none;
+  cursor: pointer;
+  border-radius: 3px;
+  height: 100%;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 1.25rem;
+  color: white;
+}
+
+nav ul li:hover {
+  background-color: #f24;
+  transition: 0.2s linear;
+}
+
+nav ul li:hover #logout {
+  background-color: #f24;
+  transition: 0.2s linear;
+}
+
+#checkbox {
+  display: none;
+}
+
+section div:nth-child(1) {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+section div:nth-child(2) {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 100%);
+}
+
+section div:nth-child(2) ul {
+  list-style: none;
+  display: flex;
+  flex-direction: space-around;
+}
+
+section div:nth-child(2) ul li {
+  padding: 6px;
+  margin: 6px;
+  border: 1px solid #f24;
+  width: 30%;
+  text-align: center;
+}
+
+section div h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+.active {
+  background-color: #f24;
+}
+
+p::first-line {
+  color: #f24;
+}
+
+::selection {
+  background-color: gray;
+  color: white;
+}
+
+img {
+  width: 600px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #000, 0 0 20px #000 inset;
+}
+
+#logout {
+  background-color: gray;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  color: white;
+}
+
+#logout:hover {
+  background-color: #f24;
+}
